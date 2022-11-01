@@ -1,12 +1,14 @@
 let bookLibrary = [];
 
-function Book(author, title, pageNum, readStatus, extraInfo) {
+class Book {
     // the constructor
-    this.author = author;
-    this.title = title;
-    this.pageNum = pageNum;
-    this.readStatus = readStatus;
-    this.extraInfo = extraInfo;
+    constructor(author, title, pageNum, readStatus, extraInfo) {
+        this.author = author;
+        this.title = title;
+        this.pageNum = pageNum;
+        this.readStatus = readStatus;
+        this.extraInfo = extraInfo;
+    }
 }
 
 const container = document.querySelector('.container');
